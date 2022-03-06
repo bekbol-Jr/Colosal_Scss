@@ -231,6 +231,11 @@ body {
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .container, .container2 {
+    width: 90% !important;
+  }
+}
 .container {
   width: 1140px;
   margin: auto;
@@ -258,12 +263,20 @@ body {
   line-height: 31px;
   text-align: center;
   color: #ffffff;
+  transition: 0.2s;
+}
+#header .header__logo:hover {
+  color: yellow;
 }
 #header .header__nav--item {
   font-size: 16px;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.8);
   margin: 0 20px;
+  transition: 0.3s;
+}
+#header .header__nav--item:hover {
+  color: #16FCD2;
 }
 #hero .hero {
   margin-top: 60px;

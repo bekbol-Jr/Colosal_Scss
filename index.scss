@@ -1,6 +1,7 @@
 @import "reset";
 @import "variables";
 @import "slick";
+@import "media";
 
 
 body {
@@ -35,6 +36,10 @@ body {
       line-height: 31px;
       text-align: center;
       color: #ffffff;
+      transition: .2s;
+      &:hover{
+        color: yellow;
+      };
     }
 
     &__nav {
@@ -43,6 +48,10 @@ body {
         line-height: 22px;
         color: rgba(255, 255, 255, 0.8);
         margin: 0 20px;
+        transition: .3s;
+        &:hover{
+          color: #16FCD2
+        }
       }
     }
 
