@@ -1,0 +1,804 @@
+@import "reset";
+@import "variables";
+@import "slick";
+
+
+body {
+  @extend %bgImg
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
+.container2 {
+  width: 1350px;
+  margin: auto;
+}
+
+//header
+#header {
+  padding-top: 50px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 11%;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    &__nav {
+      &--item {
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0 20px;
+      }
+    }
+
+    &__btn {
+      @extend %btn
+    }
+  }
+}
+
+//header
+
+//HERO
+#hero {
+  .hero {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+    &__title {
+      @extend %blue-text
+    }
+
+    &__subtitle {
+      @extend %title-text
+    }
+
+    &__description {
+      padding: 7px 0;
+      @extend %descriptions
+    }
+
+    &__buttons {
+      padding: 10px 0;
+      display: flex;
+
+      &--purple {
+        margin: 0 10px;
+        @extend %btn;
+        background: #6016FC;
+      }
+
+      &--gray {
+        margin: 0 10px;
+        @extend %btn;
+      }
+    }
+
+    &__boxes {
+      display: flex;
+      padding-top: 50px;
+
+      &--item {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 5px;
+        width: 300px;
+        height: 250px;
+        margin: 30px;
+        padding: 40px;
+        transition: .3s;
+
+        &:hover {
+          cursor: pointer;
+          transform: translateY(-20px);
+        }
+
+        .hero__box--logo-tip {
+          transition: .2s;
+
+          &:hover {
+            transform: scale(1.2) rotate(-30deg);
+            background: #3d2828;
+          }
+        }
+
+        .hero__box--title {
+          padding: 15px 0;
+          font-family: sans-serif;
+          font-size: 18px;
+          line-height: 25px;
+          color: #FFFFFF;
+        }
+
+        .hero__box--description {
+          padding: 10px 0;
+          text-align: start;
+          @extend %descriptions
+        }
+      }
+    }
+  }
+}
+
+//HERO
+
+//LOGO
+#logo {
+  padding-top: 50px;
+
+  .logo {
+    border-top: 0.1px solid #c4bcbc;
+    border-bottom: 0.1px solid #c4bcbc;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      padding: 30px;
+      color: rgba(182, 189, 162, 0.89);
+      font-family: sans-serif;
+      font-size: 180%;
+      transition: .3s;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.3);
+      }
+    }
+  }
+}
+
+//LOGO
+
+//about-working
+#about-working {
+  padding-top: 120px;
+
+  .about-working {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+      &--ask {
+        @extend %blue-text
+      }
+
+      &--theme {
+        @extend %title-text;
+        font-size: 30px;
+      }
+
+      &--description {
+        @extend %descriptions
+      }
+    }
+  }
+}
+
+//about-working
+
+//our-team
+#our-team {
+  padding-top: 100px;
+
+  .our-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: .5px solid #c4bcbc;
+
+    &__about {
+      padding: 0 40px;
+
+      &--title {
+        @extend %blue-text
+      }
+
+      &--theme {
+        font-size: 30px;
+        @extend %title-text
+      }
+
+      &--description {
+        margin: 20px 0;
+        @extend %descriptions
+      }
+
+      &--btn {
+        padding: 13px 20px;
+        //margin: 40px 0;
+        @extend %btn
+      }
+    }
+
+    &__images {
+      position: relative;
+
+      &--group1 {
+        position: absolute;
+      top: 120px;
+        left: -90px;
+      }
+
+      &--group2 {
+        position: relative;
+        z-index: 2;
+        transition: .4s;
+        &:hover {
+          transform: translateY(-20px);
+        }
+
+        &--person {
+          position: absolute;
+          left: -20px;
+          border-radius: 50%;
+          box-shadow: 0 0 20px #fdcfcf;
+          transition: .7s;
+          bottom: -20px;
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+      }
+
+      &--group3 {
+        position: relative;
+        z-index: 3;
+        top: -150px;
+        right: -170px;
+        transition: .4s;
+
+        &:hover {
+          transform: translateX(30px);
+        }
+
+        &--person {
+          position: absolute;
+          right: 120px;
+          top: -10px;
+          transition: .7s;
+          border-radius: 50%;
+          box-shadow: 0 0 20px #c4a3a3;
+
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+//our-team
+
+//PROJECTS
+
+#projects {
+  padding-top: 160px;
+  .projects {
+    position: relative;
+
+    &__title {
+      text-align: center;
+      @extend %blue-text;
+    }
+
+    &__theme {
+      @extend %title-text;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    &__img-shadow {
+      position: absolute;
+      z-index: -1;
+      top: -10px;
+    }
+
+    &__items {
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-around;
+
+      &--group1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_box {
+          @extend %boxes;
+
+          &-1 {
+            @extend %box;
+          }
+
+          &-2 {
+            @extend %box;
+            width: 100px;
+          }
+
+          &-3 {
+            @extend %box;
+            width: 200px;
+          }
+        }
+
+        &_title {
+          @extend %title-text;
+          font-size: 15px;
+          margin: 5px 0;
+        }
+
+        &_subtitle {
+          @extend %descriptions;
+          font-size: 13px;
+          top: -10px;
+          line-height: 5px;
+        }
+
+        &_btn {
+          @extend %btn2
+        }
+      }
+
+      &--group2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_box {
+          @extend %boxes;
+
+          &-1 {
+            @extend %box;
+          }
+
+          &-2 {
+            @extend %box;
+            width: 100px;
+          }
+
+          &-3 {
+            @extend %box;
+            width: 200px;
+          }
+        }
+
+        &_title {
+          @extend %title-text;
+          font-size: 15px;
+          margin: 5px 0;
+        }
+
+        &_subtitle {
+          @extend %descriptions;
+          font-size: 13px;
+          top: -10px;
+          line-height: 5px;
+        }
+
+        &_btn {
+          @extend %btn2
+        }
+      }
+    }
+  }
+}
+
+//PROJECTS
+
+//SERVICE_CHOOSE
+
+#service-choose {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+
+  .service-choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    width: 90%;
+    height: 700px;
+    background: #221048;
+    border-radius: 30px;
+
+    &__title {
+      @extend %blue-text
+    }
+
+    &__theme {
+      @extend %title-text;
+      font-size: 26px;
+      text-align: center;
+    }
+
+    &__boxes {
+      display: flex;
+      align-items: end;
+      padding-top: 50px;
+
+
+      &--group1 {
+        @extend %cards;
+
+        &_items {
+          display: flex;
+        }
+
+        &-title {
+          @extend %text_cards;
+
+          &-subtitles {
+            padding: 0 25px;
+            text-align: start;
+
+            &__description {
+              @extend %descriptions
+            }
+
+            &__price {
+              @extend %title-text
+
+            }
+          }
+        }
+
+        &_menu {
+          @extend %text_cards;
+          font-weight: 400;
+          text-align: center;
+          line-height: 35px;
+        }
+
+        &_btn {
+          @extend %btn;
+          background: white;
+          color: #3F2379;
+          padding: 20px 90px;
+          font-size: 20px;
+        }
+      }
+
+      &--group2 {
+        @extend %cards;
+        background: #233679;
+
+        &_items {
+          display: flex;
+
+          &-title {
+            @extend %text_cards;
+          }
+
+          &-subtitles {
+            padding: 0 25px;
+            text-align: start;
+
+            &__description {
+              @extend %descriptions
+            }
+
+            &__price {
+              @extend %title-text
+
+            }
+          }
+        }
+
+        &_menu {
+          @extend %text_cards;
+          font-weight: 400;
+          text-align: center;
+          line-height: 35px;
+        }
+
+        &_btn {
+          @extend %btn;
+          background: white;
+          color: #233679;
+          padding: 20px 90px;
+          font-size: 20px;
+        }
+      }
+
+      &--group3 {
+        @extend %cards;
+        background: #792366;
+
+        &_items {
+          display: flex;
+
+          &-title {
+            @extend %text_cards;
+          }
+
+          &-subtitles {
+            padding: 0 25px;
+            text-align: start;
+
+            &__description {
+              @extend %descriptions
+            }
+
+            &__price {
+              @extend %title-text
+
+            }
+          }
+        }
+
+        &_menu {
+          @extend %text_cards;
+          font-weight: 400;
+          text-align: center;
+          line-height: 35px;
+        }
+
+        &_btn {
+          @extend %btn;
+          background: white;
+          color: #3F2379;
+          padding: 20px 90px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+//SERVICE_CHOOSE
+
+//SLIDER
+
+#slider{
+  padding-top: 200px;
+  .slider__title{
+    @extend %blue-text;
+    text-align: center;
+  }
+  .slider__theme{
+    @extend %title-text;
+    font-size: 28px;
+    text-align: center;
+  }
+  .slider{
+    position: relative;
+    padding-top: 150px;
+    .slick-prev{
+      position: absolute;
+      font-size: 0;
+      border: none;
+      background: url("../img/prev1.svg") no-repeat center/30px;
+      width: 30px;
+      height: 30px;
+      left: -35px;
+      top: 370px;
+    }
+    .slick-next{
+      position: absolute;
+      font-size: 0;
+      border: none;
+      background: url("../img/prev2.svg") no-repeat center/30px;
+      width: 30px;
+      height: 30px;
+      right: -35px;
+      top: 370px;
+    }
+    .slick-dots{
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      padding-top: 10px;
+      .slick-active button{
+        background: #FFFFFF;
+        padding: 7.2px;
+        transition: .3s;
+      }
+    }
+    .slick-dots li{
+      margin: 0 10px;
+    }
+    .slick-dots li button{
+      font-size: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(255, 255, 255, 0.3);
+    }
+    .slick-list .slick-track .slick-current{
+      transform: scale(.9);
+      transition: .5s;
+    }
+
+    &__box1{
+     @extend %slide-box;
+      &--img{
+        position: relative;
+        padding-top: 70px;
+        transition: .2s;
+        &:hover{
+          transform: scale(1.7) translateY(-40px);}
+        &-person{
+        }
+        &-logo{
+          position: absolute;
+          bottom: 5%;
+          left: 75%;
+        }
+      }
+      &--name-person{
+        @extend %title-text;
+        font-size: 20px;
+        padding-top: 10px;
+      }
+      &--profession-person{
+        @extend %descriptions;
+        font-size: 15px;
+      }
+      &--text-person{
+        width: 77%;
+        text-align: center;
+        @extend %descriptions;
+        padding-top: 50px;
+      }
+    }
+
+    &__box2{
+      @extend %slide-box;
+      &--img{
+        position: relative;
+        padding-top: 70px;
+        transition: .2s;
+        &:hover{
+          transform: scale(1.7) translateY(-40px);}
+        &-person{}
+        &-logo{
+          position: absolute;
+          bottom: 5%;
+          left: 75%;
+        }
+      }
+      &--name-person{
+        @extend %title-text;
+        font-size: 20px;
+        padding-top: 10px;
+      }
+      &--profession-person{
+        @extend %descriptions;
+        font-size: 15px;
+      }
+      &--text-person{
+        width: 77%;
+        text-align: center;
+        @extend %descriptions;
+        padding-top: 50px;
+      }
+    }
+
+    &__box3{
+      @extend %slide-box;
+      &--img{
+        position: relative;
+        padding-top: 70px;
+        transition: .2s;
+        &:hover{
+          transform: scale(1.7) translateY(-40px);}
+        &-person{}
+        &-logo{
+          position: absolute;
+          bottom: 5%;
+          left: 75%;
+        }
+      }
+      &--name-person{
+        @extend %title-text;
+        font-size: 20px;
+        padding-top: 10px;
+      }
+      &--profession-person{
+        @extend %descriptions;
+        font-size: 15px;
+      }
+      &--text-person{
+        width: 77%;
+        text-align: center;
+        @extend %descriptions;
+        padding-top: 50px;
+      }
+    }
+
+  }
+}
+//SLIDER
+
+//REVIEW
+
+#review{
+  padding-top: 100px;
+  .review{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: .2px solid rgba(255, 255, 255, 0.2);;
+    border-bottom: .2px solid rgba(255, 255, 255, 0.2);;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title{
+      @extend %title-text;
+      width: 43%;
+      font-size: 27px;
+    }
+    &__btn{
+     &--purple{
+       @extend %btn;
+       background: #6016FC;
+       margin: 0 20px;
+       padding: 12px 40px;
+     }
+      &--gray{
+        @extend %btn;
+        margin: 0 10px;
+        padding: 12px 30px;
+      }
+    }
+  }
+}
+
+//REVIEW
+
+//FOOTER
+
+#footer{
+  padding: 130px 0;
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    &__groups{
+      &--title{
+        @extend %descriptions;
+        color: #FFFFFF;
+        font-size: 14px;
+      }
+      &--nav{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        &__items{
+          @extend %descriptions;
+            font-size: 14px;
+          transition: .1s;
+          &:hover{
+            color: #16FCD2;
+          }
+        }
+      }
+    }
+  }
+}
+
+//FOOTER

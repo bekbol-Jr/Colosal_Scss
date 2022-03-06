@@ -1,0 +1,141 @@
+$bgColor: rgba(11, 11, 34, 0.9);
+$btnBgColor: rgba(255, 255, 255, 0.1);
+
+%bg {
+  background: $bgColor;
+  backdrop-filter: blur(175px);}
+
+%bgImg{
+  background: url("../img/bg.png")no-repeat center/cover ;
+
+}
+%btn{
+  cursor: pointer;
+  background: $btnBgColor;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  color: white;
+  padding: 8px 25px;
+  transition: .1s;
+}
+%descriptions{
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+%blue-text{
+  padding: 7px 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: #16FCD2;
+}
+
+%title-text{
+  font-family: sans-serif;
+  padding: 7px 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+%btn:hover{
+  background: rgba(42, 14, 14, 0.93);
+}
+
+%btn:active{
+  background: rgba(87, 56, 56, 0.74);
+}
+
+%boxes{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  height: 350px;
+  box-sizing: border-box;
+  box-shadow: 0 30px 60px rgba(96, 22, 252, 0.03);
+  border-radius: 3px;
+  background: #161629;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+
+}
+%box{
+  width: 150px;
+  height: 25px;
+  background: #212136;
+  border-radius: 100px;
+}
+
+%btn2{
+  border: 0.2px solid white;
+  background: transparent;
+  border-radius: 80px;
+  color: white;
+  padding: 5px 20px;
+  margin: 30px 0;
+  transition: .2s;
+}
+
+%btn2:hover{
+  background: rgba(22, 185, 8, 0.58);
+}
+%btn2:active{
+  background: #000;
+}
+
+%cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 320px;
+  height: 460px;
+  background: #3F2379;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 20px;
+  transition: .2s;
+}
+%cards:hover{
+  transform: scale(1.02);
+}
+
+%text_cards{
+  padding:0 25px;
+  font-family: Noto Sans, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+%slide-box{
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 400px;
+  height: 440px;
+  border-radius: 3%;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 0 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
