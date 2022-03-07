@@ -105,11 +105,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 320px;
-  height: 460px;
+  width: 300px;
+  height: 470px;
   background: #3F2379;
   border-radius: 10px;
-  padding: 20px;
+  padding: 3px;
   margin: 0 20px;
   transition: 0.2s;
 }
@@ -236,14 +236,19 @@ body {
     width: 90% !important;
   }
 }
+body {
+  min-width: 1140px;
+}
+
 .container {
-  width: 1140px;
-  margin: auto;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .container2 {
-  width: 1350px;
-  margin: auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 #header {
@@ -312,7 +317,7 @@ body {
   width: 300px;
   height: 250px;
   margin: 30px;
-  padding: 40px;
+  padding: 17px;
   transition: 0.3s;
 }
 #hero .hero__boxes--item:hover {
@@ -509,6 +514,7 @@ body {
   align-items: center;
 }
 #service-choose .service-choose {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
