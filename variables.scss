@@ -21,25 +21,26 @@ $btnBgColor: rgba(255, 255, 255, 0.1);
 %descriptions{
   font-family: sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 28px;
+  max-width: 100%;
+  font-size: 1em;
+  line-height: 1.7em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 %blue-text{
-  padding: 7px 0;
+  margin: 7px 0;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1em;
+  line-height: 2em;
   color: #16FCD2;
 }
 
 %title-text{
   font-family: sans-serif;
-  padding: 7px 0;
+  margin: 7px 0;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 2.25em;
+  line-height: 1.75em;
   color: #FFFFFF;
 }
 
@@ -57,18 +58,17 @@ $btnBgColor: rgba(255, 255, 255, 0.1);
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 400px;
-  height: 350px;
+  width: 25vw;
+  height: 21.8vw;
   box-sizing: border-box;
   box-shadow: 0 30px 60px rgba(96, 22, 252, 0.03);
   border-radius: 3px;
   background: #161629;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  overflow: hidden;
 
 }
 %box{
-  width: 150px;
+  width: 9.3vw;
   height: 25px;
   background: #212136;
   border-radius: 100px;
@@ -92,15 +92,16 @@ $btnBgColor: rgba(255, 255, 255, 0.1);
 }
 
 %cards{
+  flex: 33.333%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 300px;
-  height: 470px;
+  width: 25%;
+  height: 440px;
   background: #3F2379;
   border-radius: 10px;
-  padding: 3px;
+  padding: 25px;
   margin: 0 20px;
   transition: .2s;
 }
@@ -117,16 +118,16 @@ $btnBgColor: rgba(255, 255, 255, 0.1);
 }
 
 %slide-box{
+  flex: 33.333%;
   display: flex;
   flex-direction: column;
-  //justify-content: space-around;
   align-items: center;
   padding: 10px;
-  width: 400px;
+  width: 24vw;
   height: 440px;
   border-radius: 3%;
   background: rgba(255, 255, 255, 0.05);
-  margin: 0 30px;
+  margin: 0 20px;
 }
 
 

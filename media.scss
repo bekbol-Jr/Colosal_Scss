@@ -1,11 +1,19 @@
-@media (max-width: 1200px) {
-  .container, .container2{
+@media (max-width: 1240px) {
+  .container{
     width: 90% !important;
+  }
+  .container2{
+    width: 90% !important;
+  }
+  .our-team, .review, .footer, .hero__boxes, .about-working{
+    flex-wrap: wrap;
   }
 }
 
 @media(max-width: 992px){
-
+  .header__nav{
+    display: none;
+  }
 }
 
 @media(max-width: 776px){
